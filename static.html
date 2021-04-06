@@ -100,9 +100,9 @@ var h,f,l,d=String.fromCharCode;t.exports={version:"2.1.2",encode:a,decode:u}},f
         y: -scale * motion.rotationRate.gamma,
       }
      var acceleratorData = {
-        x: motion.accelerationIncludingGravity.x,
-        y: motion.accelerationIncludingGravity.z,
-        z: motion.accelerationIncludingGravity.y,
+        x: motion.accelerationIncludingGravity.x / 9.8,
+        y: motion.accelerationIncludingGravity.z / 9.8,
+        z: motion.accelerationIncludingGravity.y / 9.8,
     }
       document.getElementById("x").textContent = 'x:' + gyroV.x
       document.getElementById("y").textContent = 'y:' + gyroV.y
